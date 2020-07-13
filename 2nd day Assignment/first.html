@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment 1 Day-2</title>          
+    </head>
+    <body>
+        <h1>Assignment 1- Day 2</h1>
+        <p id="sample"></p>
+        <script
+        >
+            var d = new Date();
+            var day = d.getDay()
+            var dayname=['Sunday','monday','tuesday','wednesday','Thirsday','Friday','saturday']
+            document.write("Today is:"+dayname[day]+".")
+            var hour=d.getHours()
+            //document.write("<br>"+hour)
+            var min=d.getMinutes()
+            //document.write(":"+min)
+            var sec = d.getSeconds()
+            //document.write(":"+sec)
+            var a=(hour>=12)?"PM":"AM"
+            document.write("<br>Current Time :"+hour+""+a+":"+min+":"+sec)
+        </script>
+    </body>
+</html>
